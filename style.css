@@ -1,0 +1,105 @@
+/*search bar*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(223, 91, 91, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+/*delet btn*/
+button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+   button, button span {
+    transition: 200ms;
+   }
+   
+   button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   button .icon {
+    position: absolute;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   button svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   button:hover {
+    background: #ff3636;
+   }
+   
+   button:hover .text {
+    color: black;
+   }
+   
+   button:focus {
+    outline: none;
+   }
+   
+   button:active .icon svg {
+    transform: scale(0.8);
+   }
+   @media (max-width:991px){
+    .btn{
+            width: 100% !important;
+            height: 100% !important;
+    }
+   }
