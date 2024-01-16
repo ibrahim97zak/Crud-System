@@ -83,7 +83,7 @@ for(var i=0; i<courses.length;i++) {
     <tr>
             <td>${i+1} </td>
             <td>${courses[i].courseName}</td>
-            <td>${courses[i].courseCapacity}</td>
+            <td>${courses[i].courseCategory}</td>
             <td>${courses[i].coursePrice}</td>
             <td>${courses[i].courseDescription}</td>
             <td>${courses[i].courseCapacity}</td>
@@ -157,7 +157,7 @@ for(var i=0; i<courses.length;i++) {
     <tr>
             <td>${i+1} </td>
             <td>${courses[i].courseName}</td>
-            <td>${courses[i].courseCapacity}</td>
+            <td>${courses[i].courseCategory}</td>
             <td>${courses[i].coursePrice}</td>
             <td>${courses[i].courseDescription}</td>
             <td>${courses[i].courseCapacity}</td>
